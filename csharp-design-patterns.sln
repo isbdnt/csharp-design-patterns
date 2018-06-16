@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{F5411129-E3FE-456A-A363-6A4095C964B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{86CB6CEF-C6FC-448B-B8BF-F0C3A711AFCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{A03DEA2B-3C12-4952-BECD-04C5AEE0F566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{F5411129-E3FE-456A-A363-6A4095C964B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5411129-E3FE-456A-A363-6A4095C964B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5411129-E3FE-456A-A363-6A4095C964B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CB6CEF-C6FC-448B-B8BF-F0C3A711AFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CB6CEF-C6FC-448B-B8BF-F0C3A711AFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CB6CEF-C6FC-448B-B8BF-F0C3A711AFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CB6CEF-C6FC-448B-B8BF-F0C3A711AFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03DEA2B-3C12-4952-BECD-04C5AEE0F566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03DEA2B-3C12-4952-BECD-04C5AEE0F566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03DEA2B-3C12-4952-BECD-04C5AEE0F566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03DEA2B-3C12-4952-BECD-04C5AEE0F566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
