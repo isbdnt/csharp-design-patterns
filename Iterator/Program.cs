@@ -17,8 +17,8 @@ namespace Iterator
                 new Person("Sue", "Rabon"),
             };
 
-            People peopleList = new People(peopleArray);
-            foreach (Person p in peopleList)
+            People people = new People(peopleArray);
+            foreach (Person p in people)
                 Console.WriteLine(p.firstName + " " + p.lastName);
         }
     }
