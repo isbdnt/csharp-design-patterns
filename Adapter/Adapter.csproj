@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F5E02A4D-4DA1-41ED-8B18-B950A38E4EA2}</ProjectGuid>
+    <ProjectGuid>{C5F8D2FF-32F1-401B-ADE0-57FEF11CE038}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>csharp_design_patterns</RootNamespace>
-    <AssemblyName>csharp-design-patterns</AssemblyName>
+    <RootNamespace>Adapter</RootNamespace>
+    <AssemblyName>Adapter</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LifeBoatAdapter.cs" />
+    <Compile Include="LifeBoat.cs" />
+    <Compile Include="IRowingBoat.cs" />
+    <Compile Include="FishingBoat.cs" />
+    <Compile Include="FishingBoatAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
