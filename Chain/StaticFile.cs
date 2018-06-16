@@ -18,6 +18,7 @@ namespace Chain
             }
             return false;
         }
+
         async Task<string> ReadFile(string path)
         {
             Console.WriteLine("reading file");

@@ -14,6 +14,7 @@ namespace Chain
         {
             middlewares.Add(middleware);
         }
+
         public async void HandleRequest(Request request)
         {
             Response response = new Response();
