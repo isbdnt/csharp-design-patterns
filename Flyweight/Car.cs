@@ -10,11 +10,11 @@ namespace Flyweight
     {
         public string Owner;
         public string Color;
-        public CarModel CarModel;
+        public CarModel Model;
 
         public override string ToString()
         {
-            return $"ExtrinsicState:\n\tOwner: {Owner}, Color: {Color},\nIntrinsicState:\n\tBrand: {CarModel.Brand}, Price: {CarModel.Price}";
+            return $"ExtrinsicState:\n\tOwner: {Owner}, Color: {Color},\nIntrinsicState:\n\tBrand: {Model.Brand}, Price: {Model.Price}";
         }
     }
 }

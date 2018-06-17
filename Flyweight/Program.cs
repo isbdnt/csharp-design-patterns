@@ -40,8 +40,8 @@ namespace Flyweight
             Console.WriteLine("car3");
             Console.WriteLine(car3.ToString());
             Console.WriteLine();
-            Console.WriteLine(car1.CarModel == car2.CarModel);
-            Console.WriteLine(car1.CarModel == car3.CarModel);
+            Console.WriteLine(car1.Model == car2.Model);
+            Console.WriteLine(car1.Model == car3.Model);
         }
     }
 }

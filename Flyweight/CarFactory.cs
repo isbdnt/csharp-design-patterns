@@ -19,7 +19,7 @@ namespace Flyweight
             Car car = new Car();
             if (carModels.TryGetValue(modelName, out CarModel carModel))
             {
-                car.CarModel = carModel;
+                car.Model = carModel;
             }
             return car;
         }
