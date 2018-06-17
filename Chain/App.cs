@@ -22,9 +22,10 @@ namespace Chain
             {
                 if (await middleware.Handle(request, response))
                 {
-                    break;
+                    return;
                 }
             }
+            response.Send("404 not found");
         }
     }
 }

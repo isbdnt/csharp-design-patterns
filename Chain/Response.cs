@@ -8,9 +8,13 @@ namespace Chain
 {
     class Response
     {
-        public void Json(string json)
+        public void Send(string body)
         {
-            Console.WriteLine(json);
+            Console.WriteLine(body);
+        }
+        public void Json(string body)
+        {
+            Console.WriteLine(body);
         }
     }
 }

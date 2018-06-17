@@ -10,8 +10,15 @@ namespace Chain
     {
         public Task<bool> Handle(Request request, Response response)
         {
-            response.Json($"{{ \"data\" : \"the data of the api\" }}");
-            return Task.FromResult(true);
+            if (request.Path == "the/path/of/the/api")
+            {
+                response.Json($"{{ \"data\" : \"the data of the api\" }}");
+                return Task.FromResult(true);
+            }
+            else
+            {
+                return Task.FromResult(false);
+            }
         }
     }
 }

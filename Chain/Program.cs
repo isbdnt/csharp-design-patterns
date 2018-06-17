@@ -24,6 +24,11 @@ namespace Chain
                 Path = "the/path/of/the/api",
             });
 
+            app.HandleRequest(new Request()
+            {
+                Path = "not/found",
+            });
+
             Console.ReadKey();
         }
     }
