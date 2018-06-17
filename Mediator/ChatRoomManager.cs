@@ -15,7 +15,7 @@ namespace Mediator
 
         public void Announce(string message)
         {
-            chatRoom.Announce(this, message);
+            chatRoom?.Announce(this, message);
         }
     }
 }
