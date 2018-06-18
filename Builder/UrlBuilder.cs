@@ -11,6 +11,7 @@ namespace Builder
         string protocol;
         string path;
         string domain;
+        string ip;
         List<string> parameters = new List<string>();
 
         public UrlBuilder Protocol(string protocol)
@@ -37,11 +38,23 @@ namespace Builder
             return this;
         }
 
+        public UrlBuilder IP(string ip)
+        {
+            this.ip = ip;
+            return this;
+        }
+
         public Url Build()
         {
+            if (string.IsNullOrEmpty(domain) && string.IsNullOrEmpty(ip))
+            {
+                throw new Exception("A url must have a domain or ip address");
+            }
+            string pro = string.IsNullOrEmpty(protocol) ? "http" : protocol;
+            string address = string.IsNullOrEmpty(domain) ? ip : domain;
             return new Url()
             {
-                Value = $"{protocol}://{domain}/{path}{(parameters.Count > 0 ? ("?" + String.Join("&", parameters.ToArray())) : "")}",
+                Value = $"{pro}://{address}/{path}{(parameters.Count > 0 ? ("?" + String.Join("&", parameters.ToArray())) : "")}",
             };
         }
     }

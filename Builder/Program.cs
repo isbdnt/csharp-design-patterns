@@ -22,7 +22,7 @@ namespace Builder
 
             url = new UrlBuilder()
                .Protocol("https")
-               .Domain("www.test2.com")
+               .IP("111.156.66.128:443")
                .Path("the/path2")
                .Build();
 
