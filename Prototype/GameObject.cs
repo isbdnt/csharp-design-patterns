@@ -11,8 +11,6 @@ namespace Prototype
     [Serializable]
     class GameObject
     {
-        public string Name;
-
         List<Component> components = new List<Component>();
 
         static GameObject DeepClone(GameObject obj)
